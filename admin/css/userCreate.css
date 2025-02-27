@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.inputStyle p{
+  color: #ff0000;
+  display: none;
+}

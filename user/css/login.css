@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* point 색상: #FEE500 */
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  min-width: 1024px;
+  min-height: 768px;
+  width: 100%;
+  height: 100%;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  min-width: 340px;
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Apple SD Gothic Neo';
+}
+
+.wrap{
+  min-width: 340x;
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main{
+  width: 340px;
+  height: 600px;
+  margin: 20vh auto 0;
+}
+
+.loginDiv{
+  width: 340px;
+  height: 600px;
+}
+
+.logo{
+  width: 150px;
+  height: 50px;
+  margin: 0 auto 50px;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'Apple SD Gothic Neo';
+}
+
+.inputDiv{
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.inputStyle{
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom:20px;
+}
+
+.inputStylePwd{
+  display: block;
+  width: 100%;
+  height: 90px;
+  margin-bottom:20px;
+}
+
+.inputStyle input, .inputStylePwd input{
+  width: 290px;
+  height: 100%;
+  font-size: 17px;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.inputStylePwd input{
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.inputStylePwd p{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+
+.inputBtn{
+  width: 302px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.inputBtn input{
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  outline: none;
+  border: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.inputStyleNotice{
+  width: 300px;
+  height: 40px;
+}
+.inputStyleNotice p{
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -1;
+  word-spacing: -1;
+}
+
+.loginBtn{
+  background-color: #ffe500;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.doubleBtn input{
+  width: 200px;
+}
+
+.doubleBtn input:hover{
+  cursor: pointer;
+}

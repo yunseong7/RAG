@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+.startDiv{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 465px;
+}
+
+.startMSG{
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 465px;
+}
+
+.top{
+  width: 100%;
+  margin: 0;
+  position: relative;
+  height: 80px;
+  background-color: #fff;
+  display: none;
+}
+
+
+.selectVersion{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.selectVersion ul{
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.selectVersion ul li{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.selectVersion ul li:first-of-type{
+  border: 3px solid #5ef16a;
+  color: #5ef16a;
+}
+.selectVersion ul li:last-of-type{
+  margin-top: 10px;
+  border: 3px solid #cacc37;
+  color: #cacc37;
+}
+
+.chatDiv{
+  width: 100%;
+  height: calc(100vh - 270px);
+  background-color: #fff;
+  overflow-y: scroll;
+  display: none;
+}
+
+
+.question, .answer{
+  width: 75%;
+  margin-top: 30px;
+}
+.question{
+  float: right;
+  margin-right: 50px;
+}
+
+.answer{
+  float: left;
+  margin-left: 50px;
+}
+
+.question p, .answer p{
+  display: block;
+  border-radius: 30px;
+  border: 1px solid #333;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.question h5{
+  text-align: right;
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.answerVersion{
+  width: 330px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.answerVersion ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.answerVersion ul li{
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.answerVersion ul li:first-of-type{
+  border: 3px solid #5ef16a;
+  color: #5ef16a;
+}
+.answerVersion ul li:last-of-type{
+  border: 3px solid #cacc37;
+  color: #cacc37;
+}
+
+.bottom{
+  width: 100%;
+  height: 120px;
+  position: relative;
+  background-color: #fff;
+}
+
+.chatInput{
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 75%;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+}
+
+.chatInput input{
+  display: block;
+  width: 90%;
+  height: 96px;
+  margin: 2px auto;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  background-color: #f0f0f0;
+
+}
+
+.newChat{
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.newChat img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: invert(92%) sepia(0%) saturate(3%) hue-rotate(113deg) brightness(93%) contrast(86%);
+}

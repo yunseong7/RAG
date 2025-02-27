@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/promptDetail.js"></script>
+  <script src="js/header.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <title>rag_main</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="img/naps-logo-horizontal.png" alt="로고">
+      </a>
+    </h1>
+    <div class="adminDiv">
+      <img src="img/admin.png" alt="사용자 이미지" class="adminImg">
+      <h4 id="adminName" class="adminName">Admin</h4>
+    </div>
+    <div id="adminAccount" class="adminAccount">
+      <div id="adminAccountClose" class="adminAccountClose">
+        <span>X</span>
+      </div>
+      <div class="adminAccountInfo">
+        <p>
+          <span>Admin</span> 님 반갑습니다
+        </p>            
+      </div>
+      <div class="adminAccountBtn">
+        <button>로그아웃</button>
+      </div>
+    </div>
+  </div>
+  <div id="adminModalBg" class="adminModalBg"></div>
+    </header>
+    <main>
+      <nav>
+          <div id="menuList" class="menuList">
+    <div class="home">
+      <h3>
+        <a href="index.html">홈</a>
+      </h3>
+    </div>
+    <div class="serviceManage">
+      <h3>서비스 관리</h3>
+      <ul class="serviceList">
+        <li><a href="user.html">회원 관리</a></li>
+        <li><a href="data.html">데이터소스 관리</a></li>
+        <li><a href="prompt.html">프롬프트 관리</a></li>
+        <li><a href="db.html">벡터DB 컬렉션 관리</a></li>
+        <li><a href="model.html">모델 관리</a></li>
+      </ul>
+    </div>
+    <div class="historyManage">
+      <h3>이력 관리</h3>
+      <ul class="historyMenu">
+        <li><a href="chat.html">채팅 이력</a></li>
+        <li><a href="qna.html">추론 이력</a></li>
+        <li><a href="promptHistory.html">프롬프트 변경 이력</a></li>
+        <li><a href="dbHistory.html">벡터DB 컬렉션 변경 이력</a></li>
+        <li><a href="dataHistory.html">데이터소스 등록 이력</a></li>
+      </ul>
+    </div>
+  </div>
+      </nav>
+      <article>
+        <!-- 필요 화면 구성 -->
+        <div class="mainDiv">
+          <div class="mainHeader">
+            <!-- 필요 없을시 span 제거 -->
+            <h3><a href="prompt.html" class="mainTitle">프롬프트 목록</a> &rarr; 프롬프트 상세보기</h3>
+          </div>
+          <div class="mainContent">
+            <div class="inputDiv">
+              <div class="inputStyle">
+                <h5>이름</h5>
+                <input type="text" id="name" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>설명</h5>
+                <input type="text" id="context" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>context</h5>
+                <input type="text" id="detail" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>생성일시</h5>
+                <input type="text" id="create" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>수정일시</h5>
+                <input type="text" id="modify" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>생성인</h5>
+                <input type="text" id="createAdmin" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>수정인</h5>
+                <input type="text" id="modifyAdmin" readonly>
+              </div>
+              <div class="inputStyle">
+                <h5>적용여부</h5>
+                <input type="text" id="apply" readonly>
+              </div>
+              <div class="inputBtn tripleBtn">
+                <input type="button" value="삭제하기" class="deleteBtn">
+                <input type="button" value="적용하기" class="applyBtn">
+                <input type="button" value="수정하기" class="modifyBtn">
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+  <!-- 페이지가 load된 후에 작동 가능 -->
+  <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: relative;
+}
+
+h1.logo{
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 50px;
+  left: 60px;
+  top: 10px;
+}
+
+h1.logo a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+h1.logo a img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.adminDiv{
+  display: flex;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #efefef;
+  border-radius: 50px;
+  align-content: center;
+}
+
+.adminImg{
+  display: block;
+  margin: 5px 0 0 20PX;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.adminName{
+  display: block;
+  width: calc(100% - 75px);
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0 ;
+  align-content: center;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.adminName:hover{
+  text-decoration: underline;
+}
+
+
+
+.adminAccount{
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  right: 80px;
+  top: 60px;
+  z-index: 99;
+  border: 5px solid #000;
+  background-color: #fff;
+  display: none;
+}
+.adminAccountClose{
+  width: 100%;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.adminAccountClose span{
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.adminAccountInfo{
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.adminAccountInfo p{
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.adminAccountInfo span{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.adminAccountBtn{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.adminAccountBtn button{
+  width: 50%;
+  height: 40px;
+  line-height: 30px;
+  border-radius: 20px;
+  border: 5px solid #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adminAccountBtn button{
+  background-color: #444;
+}
+
+.adminModalBg{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: none;
+}

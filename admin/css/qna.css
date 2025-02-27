@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.tableStyle thead tr th:nth-of-type(1){width: 5%;}
+.tableStyle thead tr th:nth-of-type(2){width: 20%;}
+.tableStyle thead tr th:nth-of-type(3){width: 25%;}
+.tableStyle thead tr th:nth-of-type(4){width: 25%;}
+.tableStyle thead tr th:nth-of-type(5){width: 10%;}
+.tableStyle thead tr th:nth-of-type(6){width: 15%;}
+
+.tableStyle thead tr td:nth-of-type(1){width: 5%;}
+.tableStyle thead tr td:nth-of-type(2){width: 20%;}
+.tableStyle thead tr td:nth-of-type(3){width: 25%;}
+.tableStyle thead tr td:nth-of-type(4){width: 25%;}
+.tableStyle thead tr td:nth-of-type(5){width: 10%;}
+.tableStyle thead tr td:nth-of-type(6){width: 15%;}
+
+.qnaHeader{
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 130px;
+  margin: 0 auto 20px;
+}
+
+.qnaHeader h3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 22px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  word-spacing: 1;
+}
+
+.qnaHeader h3 a{
+  color: #aaa;
+}
+
+.qnaHeader h3:hover a{
+  text-decoration: underline;
+}
+
+.searchDiv{
+  position: absolute;
+  width: 450px;
+  right: 0;
+  top: 30px;
+  height: 100px;
+  border: none;
+}
+
+.searchDiv select{
+  width: 282px !important;
+}
+
+.searchDiv input{
+  width: 270px !important;
+}

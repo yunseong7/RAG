@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+/* point 색상: #FEE500 */
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Regular.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  min-width: 1024px;
+  min-height: 768px;
+  width: 100%;
+  height: 100%;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  min-width: 1024px;
+  min-height: 1050px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Apple SD Gothic Neo';
+  overflow: scroll;
+}
+
+.wrap{
+  min-width: 1024px;
+  min-height: 768px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+}
+
+main{
+  width: 100%;
+  height: calc(100% - 62px);
+  display: flex;
+  position: relative;
+}
+
+nav{
+  width: 250px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: .7s;
+  border-right: 2px solid #ccc;
+}
+
+
+nav.on{
+  left: -250px;
+}
+
+article{
+  width: calc((100% - 250px));
+  height: 100%;  
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .7s;
+}
+
+article.on{
+  width: 100%;
+}
+
+.mainDiv{
+  width: 60%;
+  height: 95%;
+  margin: 50px auto 0;
+}
+
+.mainHeader{
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 50px;
+  margin: 0 auto 20px;
+}
+
+.mainHeader h3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 22px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  word-spacing: 1;
+}
+
+.mainHeader h3 a{
+  color: #aaa;
+}
+
+.mainHeader h3:hover a{
+  text-decoration: underline;
+}
+
+.mainHeader>div{
+  position: absolute;
+  width: 130px;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ffe500;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mainContent{
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'Apple SD Gothic Neo';
+}
+
+
+.inputDiv{
+  width: 100%;
+  height: 100%;
+}
+
+.inputStyle{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  margin: 0 0 20px 20px;
+}
+
+.inputStyle h5{
+  width: 150px;
+  font-size: 17px;
+}
+
+.inputStyle input, .inputStyle select{
+  width: 290px;
+  height: 100%;
+  font-size: 17px;
+  padding: 0;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.inputStyle input[readonly]{
+  background-color: rgb(227, 227, 227);
+  color: rgb(78, 78, 78);
+  border: 0;
+}
+
+.inputStyle select{
+  width: 302px;
+}
+
+.inputBtn{
+  width: 452px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.inputBtn input{
+  height: 40px;
+  font-size: 17px;
+  outline: none;
+  border: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.saveBtn, .modifyBtn{
+  background-color: #ffe500;
+  font-weight: 600;
+  color: #333;
+}
+
+.applyBtn, .deleteBtn, .cancelBtn, .activeBtn, .approvalBtn{
+  background-color: rgb(227, 227, 227);
+  font-weight: 600;
+  color: rgb(143, 143, 143);
+}
+
+.doubleBtn input{
+  width: 200px;
+}
+
+.doubleBtn input:hover{
+  cursor: pointer;
+}
+
+.tripleBtn input{
+  width: 145px;
+}
+
+.tripleBtn input:hover{
+  cursor: pointer;
+}
+
+.inputBtn input:hover{
+  color: #333;
+}
+
+/* 테이블 스타일 CSS*/
+
+.tableStyle{
+  border-top: 3px solid #333;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  border-spacing: 0;
+}
+.tableStyle thead tr, table tbody tr{
+  height: 40px;
+}
+
+.tableStyle thead tr th{
+  border: 1px solid #ddd;
+  border-top: 0;
+  font-size: 18px;
+}
+
+.tableStyle thead tr th:first-of-type{
+  border-left: 0;
+}
+
+.tableStyle thead tr th:last-of-type{
+  border-right: 0;
+}
+
+.tableStyle tbody tr td{
+  border: 1px solid #ddd;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.tableStyle tbody tr td:first-of-type{
+  border-left: 0;
+}
+
+.tableStyle tbody tr td:last-of-type{
+  border-right: 0;
+}
+
+.tableStyle tbody tr:hover{
+  background-color: #eee;
+}
+
+.tableStyle tbody tr:hover td{
+  color: #333;
+}
+
+
+
+/* 페이징 버튼 */
+
+.pagination{
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination button{
+  border: 1px solid #aaa;
+  outline: none;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  color: #333;
+}
+
+.page-buttons{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  height: 35px;
+}
+.page-buttons button{
+  border: 0;
+  outline: none;
+  background-color: #fff;
+  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  color: #aaa;
+}
+.page-buttons button:hover{
+  color: #333;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.btnFirst{
+  background: url(../img/dblbt.png) center center / cover no-repeat;
+}
+
+.btnFirst:hover{
+  background: #000 url(../img/dblbtw.png) center center / cover no-repeat;
+  border: 0;  
+}
+.btnPrev{
+  background: url(../img/lbt.png) center center / cover no-repeat;
+}
+
+.btnPrev:hover{
+  background: #000 url(../img/lbtw.png) center center / cover no-repeat;
+  border: 0;
+}
+.btnNext{
+  background: url(../img/rbt.png) center center / cover no-repeat;
+}
+
+.btnNext:hover{
+  background: #000 url(../img/rbtw.png) center center / cover no-repeat;
+  border: 0;
+}
+.btnLast{
+  background: url(../img/dbrbt.png) center center / cover no-repeat;
+}
+
+.btnLast:hover{
+  background: #000 url(../img/dbrbtw.png) center center / cover no-repeat;
+  border: 0;
+}
+
+.page-btn.bold {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.tabMenu{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabMenu>div{
+  width: 145px;
+  height: 100%;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.tabMenu>div:hover{
+  cursor: pointer;
+}
+
+.tabMenu>div.on{
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.fileDiv{
+  height: 300px;
+}
+
+.fileArea{
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+} 
+
+.fileArea p{
+  width: 100%;
+  height: 40px;
+  margin-top: 130px;
+  text-align: center;
+  color: #ccc;
+}
+
+@media screen and (max-width: 1439px){
+  .mainDiv{
+    width: 70%;
+  }
+
+  .tableStyle thead tr th{
+    font-size: 15px;
+  }
+  
+  .tableStyle tbody tr td{
+    font-size: 12px;
+  }
+}
